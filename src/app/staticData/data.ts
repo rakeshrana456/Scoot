@@ -79,7 +79,7 @@ export const HasselData: SectionData[] = [
       "Our payment is as easy as one two three. We accept most credit cards and debit cards.You can also link your Paypal account inside tha app later? No worries! You can defer payment for up to a month.",
     buttonText: "Learn More",
     image: {
-      src: "/Hassel/Hassel.png",
+      src: "/Hassel/hassel.png",
       alt: "Person holding a mobile phone",
     },
   },
