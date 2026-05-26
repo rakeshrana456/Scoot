@@ -11,7 +11,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative overflow-hidden">
       
       {/* Background Image */}
       <Image
@@ -22,34 +22,34 @@ export default function Hero() {
         className="object-cover"
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+     
+      <div className="absolute inset-0 bg-black/4"></div>
 
-      {/* Yellow Line */}
+   
       <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/3 w-82 h-4 bg-[#FCB72B] z-10"></div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto min-h-screen flex items-center px-5">
+      
+      <div className="relative z-10 container mx-auto min-h-170 flex items-center px-5">
         {data.map((item: HeroData, index) => (
           <div
             key={index}
-            className="max-w-full lg:max-w-[700px] flex flex-col gap-8 text-center lg:text-left items-center lg:items-start"
+            className="max-w-full lg:max-w-175 flex flex-col gap-8 text-center lg:text-left items-center lg:items-start h-115"
           >
             
-            {/* Heading */}
+         
             <Typography
               variant="heading"
-              className="text-white text-[38px] sm:text-[52px] lg:text-[64px] font-bold leading-tight lg:leading-[76px]"
+              className="text-white text-[38px] sm:text-[52px] lg:text-[64px] font-bold leading-tight lg:leading-19"
             >
               {item.heading}
             </Typography>
 
-            {/* Paragraph + Button */}
-            <div className="flex flex-col items-center lg:items-start gap-8 lg:ml-15 max-w-full lg:max-w-[540px]">
+            
+            <div className="flex flex-col items-center lg:items-start gap-8 lg:ml-15 max-w-full lg:max-w-133">
               
               <Typography
                 variant="paragraph"
-                className="text-white text-[16px] sm:text-[18px] leading-7 lg:leading-8"
+                className="text-white text-[17px] sm:text-[18px] leading-7 lg:leading-8"
               >
                 {item.paragraph}
               </Typography>

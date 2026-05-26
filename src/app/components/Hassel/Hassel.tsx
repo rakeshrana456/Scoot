@@ -32,7 +32,7 @@ export default function Hassel() {
 
               <Typography
                 variant="paragraph"
-                className="text-[#A2A7AD] text-[15px] sm:text-[16px] max-w-full lg:max-w-[460px]"
+                className="text-[#A2A7AD] text-[15px] sm:text-[16px] max-w-full lg:max-w-115"
               >
                 {item.description}
               </Typography>
@@ -52,12 +52,12 @@ export default function Hassel() {
                   alt="TicIcon"
                   width={500}
                   height={500}
-                  className="w-[220px] lg:w-[440px] h-auto object-cover"
+                  className="w-55 lg:w-110 h-auto object-cover"
                 />
               </div>
 
               {/* Main Image */}
-              <div className="w-[260px] h-[260px] sm:w-[350px] sm:h-[350px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden relative z-10">
+              <div className="w-65 h-65 sm:w-88 sm:h-88 lg:w-100 lg:h-100 rounded-full overflow-hidden relative z-10">
                 <Image
                   src={item?.image?.src}
                   alt="bike"

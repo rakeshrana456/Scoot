@@ -23,18 +23,18 @@ export default function Telematry() {
             className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-10 items-center mb-20"
           >
             
-            {/* Left Content */}
+        
             <div className="flex flex-col gap-8 text-center lg:text-left items-center lg:items-start">
               <Typography
                 variant="heading"
-                className="text-[#525C68] text-[32px] sm:text-[40px] lg:text-[48px] max-w-full lg:max-w-[480px] leading-tight"
+                className="text-[#525C68] text-[32px] sm:text-[40px] lg:text-[48px] max-w-full lg:max-w-120 leading-tight"
               >
                 {item.title}
               </Typography>
 
               <Typography
                 variant="paragraph"
-                className="text-[#A2A7AD] max-w-full lg:max-w-[440px] text-[15px] sm:text-[16px]"
+                className="text-[#A2A7AD] max-w-full lg:max-w-110 text-[15px] sm:text-[16px]"
               >
                 {item.description}
               </Typography>
@@ -44,22 +44,19 @@ export default function Telematry() {
               </Button>
             </div>
 
-            {/* Right Image */}
             <div className="flex items-center justify-center lg:justify-end relative">
               
-              {/* Background Pattern */}
               <div className=" absolute -right-16 lg:-right-32 top-10 lg:top-20 z-20">
                 <Image
                   src="/Telematray/TicIcon.png"
                   alt="pattern"
                   width={500}
                   height={500}
-                  className="w-[220px] lg:w-full h-auto object-cover"
+                  className=" lg:w-full h-auto object-cover"
                 />
               </div>
 
-              {/* Main Image */}
-              <div className="w-[260px] h-[260px] sm:w-[350px] sm:h-[350px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden relative z-10">
+              <div className="w-65 h-65 sm:w-88 sm:h-88 lg:w-100 lg:h-100 rounded-full overflow-hidden relative z-10">
                 <Image
                   src={item?.image?.src}
                   alt={item?.image?.alt}
