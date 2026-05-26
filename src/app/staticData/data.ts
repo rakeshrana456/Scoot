@@ -36,7 +36,7 @@ export const data: HeroData[] = [
 export const guide: GuideData[] = [
   {
     id: "1",
-    image: "/Guider/location.png",
+    image: "/Guider/Location.png",
     heading: "Locate with app",
     paragraph:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
@@ -90,7 +90,7 @@ export const Rept = [
     "description": "The Scoot app is available with riding telemetry. This means it can show your average speed, how long you've been using the scooter, your traveling distance and many more things all in an easy to use app.",
     "buttonText": "Learn More",
     "image": {
-      "src": "/Telematray/buisnessHand.jpg",
+      "src": "/Telematray/buisnessHand.png",
       "alt": "Person holding a mobile phone"
     },
   }
