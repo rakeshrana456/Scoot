@@ -4,17 +4,19 @@ import Guider from "./components/Guider/Guider"
 import Telematry from "./components/Telematry/Telematry";
 import City from "./components/YourCity/City";
 import Hassel from "./components/Hassel/Hassel";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
     <>
-     <main className="flex flex-col gap-12">
+     <main className="flex flex-col gap-8">
        <Navbar/>
        <Hero/>
        <Guider/>
        <Telematry/>
        <City/>
        <Hassel/>
+       <Footer/>
       </main>
     </>
   );
