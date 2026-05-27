@@ -29,7 +29,7 @@ export default function Footer() {
         alt="App Store"
         width={200}
         height={200}
-        className="w-35 sm:w-45lg:max-w-49 h-auto cursor-pointer"
+        className="w-35 sm:w-45 lg:max-w-49 h-15 cursor-pointer"
       />
 
       <Image
@@ -37,7 +37,7 @@ export default function Footer() {
         alt="Google Store"
         width={200}
         height={200}
-        className="w-35 sm:w-45 lg:max-w-49 h-auto cursor-pointer"
+        className="w-35 sm:w-45 lg:max-w-49 h-15 cursor-pointer"
       />
 
     </div>

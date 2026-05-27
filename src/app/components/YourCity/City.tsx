@@ -48,13 +48,13 @@ export default function City() {
   <div className="flex items-center justify-center lg:justify-start relative order-2 lg:order-1">
 
     {/* Background Pattern */}
-    <div className=" absolute -left-16 lg:-left-42 -top-10 lg:top-10 z-20">
+    <div className=" absolute -left-16 lg:-left-82  lg:top-0 z-20">
       <Image
         src="/City/tick-icon (1).png"
         alt="tick icon"
         width={500}
         height={500}
-        className="w-[220px] lg:w-full h-auto object-cover"
+        className="w-[220px] lg:w-[364px] h-auto object-cover"
       />
     </div>
 

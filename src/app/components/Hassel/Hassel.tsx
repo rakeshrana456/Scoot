@@ -19,9 +19,9 @@ export default function Hassel() {
         {HasselData.map((item: HasselData, index) => (
           <div
             key={index}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-12  mb-20"
           >
-            {/* Left Content */}
+
             <div className="flex flex-col gap-8 text-center lg:text-left items-center lg:items-start">
               <Typography
                 variant="heading"
@@ -42,28 +42,28 @@ export default function Hassel() {
               </Button>
             </div>
 
-            {/* Right Image */}
+
             <div className="flex items-center justify-center lg:justify-end relative">
-              
-              {/* Background Pattern */}
-              <div className=" absolute -right-20 lg:-right-32 top-10 z-20">
+
+
+              <div className=" absolute -right-20 lg:-right-72 top-10 z-20">
                 <Image
-                  src="/Telematray/TicIcon.png"
+                  src="/Hassel/tick-icon (2).png"
                   alt="TicIcon"
                   width={500}
                   height={500}
-                  className="w-55 lg:w-110 h-auto object-cover"
+                  className="w-55 lg:w-110  object-cover"
                 />
               </div>
 
-              {/* Main Image */}
-              <div className="w-65 h-65 sm:w-88 sm:h-88 lg:w-100 lg:h-100 rounded-full overflow-hidden relative z-10">
+              
+              <div className="w-full h-65 sm:w-88 sm:h-88 lg:w-full lg:h-125 rounded-full overflow-hidden relative z-10">
                 <Image
                   src={item?.image?.src}
                   alt="bike"
                   width={500}
                   height={500}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-fill"
                 />
               </div>
             </div>
