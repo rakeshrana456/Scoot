@@ -2,7 +2,20 @@ import Typography from "@/app/Typography/Typography"
 import Button from "@/app/Button/Button"
 import Image from "next/image"
 export default function Footer() {
-  const arr:string []=["/Footer/facebook.png","/Footer/twitter.png","/Footer/insta.png",]
+  const arr = [
+    {
+      src: "/Footer/facebook.png",
+      hover: "hover:bg-[#1877F2]", // Facebook blue
+    },
+    {
+      src: "/Footer/twitter.png",
+      hover: "hover:bg-[#1DA1F2]", // Twitter blue
+    },
+    {
+      src: "/Footer/insta.png",
+      hover: "hover:bg-[#E4405F]", // Instagram pink
+    },
+  ];
   return (
     
 
@@ -88,19 +101,21 @@ export default function Footer() {
 
   </div>
 
-  <div className="flex gap-5">
-    {arr.map((item, index) => (
-      <div key={index}>
-        <Image
-          src={item}
-          alt="social icon"
-          width={30}
-          height={30}
-          className="cursor-pointer"
-        />
-      </div>
-    ))}
-  </div>
+   <div className="flex gap-5">
+          {arr.map((item, index) => (
+            <div
+              key={index}
+              className={`p-2 rounded-full transition-all duration-300 cursor-pointer ${item.hover}`}
+            >
+              <Image
+                src={item.src}
+                alt="social icon"
+                width={30}
+                height={30}
+              />
+            </div>
+          ))}
+        </div>
 
 </div>
         </div>

@@ -27,7 +27,7 @@ export default function City() {
   <div className="flex flex-col gap-8 text-center lg:text-left items-center lg:items-start order-1 lg:order-2">
     <Typography
       variant="heading"
-      className="text-[#525C68] text-[32px] sm:text-[40px] lg:text-[48px] max-w-full lg:max-w-[460px] leading-tight"
+      className="text-[#525C68] text-[32px] sm:text-[40px] lg:text-[48px] max-w-full lg:max-w-[462px] leading-tight"
     >
       {item.title}
     </Typography>

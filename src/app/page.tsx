@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 export default function Home() {
   return (
     <>
-     <main className="flex flex-col gap-8">
+     <main className="flex flex-col ">
        <Navbar/>
        <Hero/>
        <Guider/>

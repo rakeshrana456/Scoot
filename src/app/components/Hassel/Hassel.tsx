@@ -14,7 +14,7 @@ export default function Hassel() {
   }
 
   return (
-    <section className="mt-10 px-5 overflow-hidden">
+    <section className="my-10  lg:my-20 px-5 overflow-hidden">
       <div className="container mx-auto relative">
         {HasselData.map((item: HasselData, index) => (
           <div
@@ -29,23 +29,17 @@ export default function Hassel() {
               >
                 {item.title}
               </Typography>
-
               <Typography
                 variant="paragraph"
                 className="text-[#A2A7AD] text-[15px] sm:text-[16px] max-w-full lg:max-w-115"
               >
                 {item.description}
               </Typography>
-
               <Button variant="primary" className="w-fit">
                 {item.buttonText}
               </Button>
             </div>
-
-
             <div className="flex items-center justify-center lg:justify-end relative">
-
-
               <div className=" absolute -right-20 lg:-right-72 top-10 z-20">
                 <Image
                   src="/Hassel/tick-icon (2).png"
@@ -55,15 +49,13 @@ export default function Hassel() {
                   className="w-55 lg:w-110  object-cover"
                 />
               </div>
-
-              
-              <div className="w-full h-65 sm:w-88 sm:h-88 lg:w-full lg:h-125 rounded-full overflow-hidden relative z-10">
+              <div className="w-65 h-65 sm:w-88 sm:h-88 lg:w-100 lg:h-100 rounded-full overflow-hidden relative z-10">
                 <Image
                   src={item?.image?.src}
-                  alt="bike"
+                  alt="image of hassel"
                   width={500}
                   height={500}
-                  className="w-full h-full object-fill"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>

@@ -15,12 +15,12 @@ export default function Telematry() {
   }
 
   return (
-    <section className="mt-10 px-5 overflow-hidden">
+    <section className=" my-5 lg:my-20 px-5 overflow-hidden">
       <div className="container mx-auto relative">
         {Rept.map((item: Telematry, index) => (
           <div
             key={index}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-10 items-center mb-20"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-10 items-center "
           >
             
         

@@ -17,7 +17,7 @@ export default function Guider() {
         {/* Background Line */}
         <div className="hidden lg:block w-full max-w-305 h-5 bg-[#5a595346] absolute top-12 left-0"></div>
 
-        <div className="container mx-auto relative">
+        <div className="container mx-auto relative lg:px-0 ">
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12 lg:gap-8">
             
             {guide.map((item: GuideData) => (
