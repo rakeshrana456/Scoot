@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Typography from "@/app/Typography/Typography";
 import Button from "@/app/Button/Button";
-
+import Link from "next/link";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,25 +14,27 @@ export default function Navbar() {
 
           {/* Logo */}
           <div>
+              <Link href="/">
             <Typography
               variant="heading"
               className="text-[45px] text-[#555E6F] cursor-pointer"
             >
               scoot
-            </Typography>
+            </Typography></Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-20">
             <div>
               <ul className="flex gap-5 cursor-pointer">
+                <Link href="/About">
                 <Typography
                   variant="paragraph"
                   className="text-[18px] text-[#9A9DA2] hover:text-purple-300"
                 >
                   About
                 </Typography>
-
+                </Link>
                 <Typography
                   variant="paragraph"
                   className="text-[18px] text-[#9A9DA2]  hover:text-purple-300"
@@ -87,7 +89,7 @@ export default function Navbar() {
         <div
   className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out ${
     isOpen
-      ? "max-h-[400px] opacity-100 translate-y-0 mt-5"
+      ? "max-h-100 opacity-100 translate-y-0 mt-5"
       : "max-h-0 opacity-0 -translate-y-5"
   }`}
 >

@@ -104,3 +104,26 @@ export const HeroData={
     "alt":"hero image"
   }
 }
+export const Mobility = [
+  {
+    "title": "Mobility for the digital era",
+    "description": "Getting around should be simple (and even fun!) for everyone.We embrace technology to provide low cost,smart access to scooters at your fingertips.",
+    "buttonText": "Learn More",
+    "image": {
+      "src": "/About/about.png",
+      "alt": "Person holding a mobile phone"
+    },
+  }
+]
+
+export const Urbandata = [
+  {
+    "title": "Better urban living",
+    "description": "We,re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.",
+    "buttonText": "Learn More",
+    "image": {
+      "src": "/About/image (2).png",
+      "alt": "Person holding a mobile phone"
+    },
+  }
+]
