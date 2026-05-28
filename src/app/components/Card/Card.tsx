@@ -4,6 +4,7 @@ interface ItemType {
   title: string;
   description: string;
   buttonText: string;
+  ShowButton:boolean
   image: {
     src: string;
     alt: string;

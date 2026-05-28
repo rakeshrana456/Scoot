@@ -15,7 +15,7 @@ export default function Home() {
       
        <Hero/>
        <Guider/>
-       <Card data={Rept} reverse={false}/>   
+       <Card data={Rept}/>   
        <SecondCard data={cityData}/>
        <Card data={HasselData}/>
       

@@ -1,6 +1,7 @@
 import Card from "../components/Card/Card"
 import SecondCard from "../components/SecondCard/SecondCard";
 import { Mobility,Urbandata } from "@/app/staticData/data";
+import Faqs from "./Faq/Faqs";
 
 export default function About() {
     return (
@@ -22,7 +23,7 @@ export default function About() {
                 </div>
             </section>
              <Card data={Mobility} />
-             <SecondCard data={Urbandata}/>
+             <SecondCard data={Urbandata} />
             <section className="py-20 bg-[#F2F5F9]">
                 <div className="container mx-auto px-5">
 
@@ -44,7 +45,7 @@ export default function About() {
                                     <img
                                         src="/About/Mask group (2).png"
                                         alt="Our tech"
-                                        className="w-full h-full object-cover"
+                                       className="w-full h-full object-cover hover:scale-115 transition-all duration-700 ease-in-out cursor-pointer"
                                     />
                                 </div>
 
@@ -75,7 +76,7 @@ export default function About() {
                                     <img
                                         src="/About/Mask group (3).png"
                                         alt="Our integrity"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover hover:scale-115 transition-all duration-700 ease-in-out cursor-pointer"
                                     />
                                 </div>
 
@@ -104,7 +105,7 @@ export default function About() {
                                     <img
                                         src="/About/Mask group (4).png"
                                         alt="Our community"
-                                        className="w-full h-full object-cover"
+                                         className="w-full h-full object-cover hover:scale-115 transition-all duration-700 ease-in-out cursor-pointer"
                                     />
                                 </div>
 
@@ -128,6 +129,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
+            <Faqs/>
            
         </>
     )

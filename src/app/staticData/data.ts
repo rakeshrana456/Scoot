@@ -17,6 +17,7 @@ interface SectionData {
   title: string;
   description: string;
   buttonText: string;
+  ShowButton:boolean
   image: {
     src: string;
     alt: string;
@@ -65,6 +66,8 @@ export const cityData: SectionData[] = [
     description:
       "Scoot is available in 4 major cities so far,We re expanding rapidly, so be sure to let us know if you want to see us in your hometown.We re aiming to let our scooters loose on 23 cities over the coming year..",
     buttonText: "Learn More",
+    ShowButton:true,
+    
     image: {
       src: "/City/mobileMan.png",
       alt: "Person holding a mobile phone",
@@ -78,6 +81,7 @@ export const HasselData: SectionData[] = [
     description:
       "Our payment is as easy as one two three. We accept most credit cards and debit cards.You can also link your Paypal account inside tha app later? No worries! You can defer payment for up to a month.",
     buttonText: "Learn More",
+    ShowButton:true,
     image: {
       src: "/Hassel/hassel.png",
       alt: "Person holding a mobile phone",
@@ -89,6 +93,7 @@ export const Rept = [
     "title": "Easy to use riding telemetry",
     "description": "The Scoot app is available with riding telemetry. This means it can show your average speed, how long you've been using the scooter, your traveling distance and many more things all in an easy to use app.",
     "buttonText": "Learn More",
+    "ShowButton":true,
     "image": {
       "src": "/Telematray/buisnessHand.png",
       "alt": "Person holding a mobile phone"
@@ -99,6 +104,7 @@ export const HeroData={
   "heading":"Scooter sharing made simple",
    "paragraph":"Scoot takes the hassle out of urban mobility. Our bikes areplaced in convenient locations in each of our cities. Use app to locate the nearest bike, unlock it with a tap, andyou’re away!",
    "buttonText":"Get Scootin",
+   
   "image":{
     "src":"/hero/hero.png",
     "alt":"hero image"
@@ -109,6 +115,7 @@ export const Mobility = [
     "title": "Mobility for the digital era",
     "description": "Getting around should be simple (and even fun!) for everyone.We embrace technology to provide low cost,smart access to scooters at your fingertips.",
     "buttonText": "Learn More",
+    "ShowButton":false,
     "image": {
       "src": "/About/about.png",
       "alt": "Person holding a mobile phone"
@@ -121,9 +128,54 @@ export const Urbandata = [
     "title": "Better urban living",
     "description": "We,re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.",
     "buttonText": "Learn More",
+    "ShowButton":false,
     "image": {
       "src": "/About/image (2).png",
       "alt": "Person holding a mobile phone"
     },
   }
+]
+
+export const Frequently =[
+  {   
+    "id":"1",
+    "questionFirst":"How di I download the app?",
+    "AnswerFirst" : "To download the Scoot app, you can search Scoot in both the App and Google Play stores.An even simpler way to do it would be to click the relevant link at the bottom of this page and you ll be re-directed to the correct page."
+
+  },
+  {   
+    "id":"2",
+    "questionFirst":"Can I find a nearby Scoots?",
+    "AnswerFirst" : "To download the Scoot app, you can search Scoot in both the App and Google Play stores.An even simpler way to do it would be to click the relevant link at the bottom of this page and you ll be re-directed to the correct page."
+
+  },
+   {   
+    "id":"3",
+    "questionFirst":"What if I damage my Scoot?",
+    "AnswerFirst" :"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex perferendis iure culpa tempore maiores provident laborum repellat modi officiis obcaecati.",
+
+  },
+  
+
+]
+export const feq=[
+  
+ {   
+    "id":"4",
+    "questionSecond":"Should I wear a helmet?",
+    "AnsweSecond" :"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex perferendis iure culpa tempore maiores provident laborum repellat modi officiis obcaecati.",
+
+  },
+  {   
+    "id":"5",
+    "questionSecond":"How about the rules & regulations?",
+    "AnsweSecond" :"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex perferendis iure culpa tempore maiores provident laborum repellat modi officiis obcaecati.",
+
+  },
+   {   
+    "id":"6",
+    "questionSecond":"What if I damage my Scoot?",
+    "AnsweSecond" :"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex perferendis iure culpa tempore maiores provident laborum repellat modi officiis obcaecati.",
+   
+  },
 ]

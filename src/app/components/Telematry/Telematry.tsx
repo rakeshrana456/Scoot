@@ -1,11 +1,12 @@
 import Typography from "@/app/Typography/Typography";
 import Button from "@/app/Button/Button";
 import Image from "next/image";
-import { Rept } from "@/app/staticData/data";
+
 interface ItemType {
   title: string;
   description: string;
   buttonText: string;
+  ShowButton: boolean
   image: {
     src: string;
     alt: string;
@@ -15,9 +16,11 @@ interface ItemType {
 interface TelematryProps {
   items: ItemType;
   reverse?: boolean
+
 }
 
 export default function Telematry({ items, reverse }: TelematryProps) {
+
 
 
   return (
@@ -45,9 +48,11 @@ export default function Telematry({ items, reverse }: TelematryProps) {
               {items.description}
             </Typography>
 
-            <Button variant="primary" className="w-fit">
-              {items.buttonText}
-            </Button>
+            {items.ShowButton && (
+              <Button variant="primary" className="w-fit">
+                {items.buttonText}
+              </Button>
+            )}
           </div>
 
           <div className="flex items-center justify-center lg:justify-end relative">
@@ -68,7 +73,7 @@ export default function Telematry({ items, reverse }: TelematryProps) {
                 alt={items?.image?.alt}
                 width={500}
                 height={500}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-115 transition-all duration-700 ease-in-out cursor-pointer"
               />
             </div>
           </div>
