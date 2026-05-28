@@ -9,7 +9,7 @@ export default function About() {
             <section
                 className="relative h-50 lg:h-62.5 bg-cover bg-center"
                 style={{
-                    backgroundImage: "url('/About/about-hero.jpg')",
+                    backgroundImage: "url('/About/Hero-section-img.png')",
                 }}
             >
 
