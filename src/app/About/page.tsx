@@ -16,8 +16,8 @@ export default function About() {
                 <div className="absolute inset-0 bg-[#2F3B59]/70"></div>
 
 
-                <div className="container mx-auto h-full flex items-center  relative z-10">
-                    <h1 className="text-white text-[40px] sm:text-[48px] lg:text-[56px] font-bold">
+                <div className="container mx-auto h-full flex items-center  relative z-10 lg:px-0 px-4">
+                    <h1 className="text-white text-[40px] sm:text-[48px] lg:text-[56px] font-bold ">
                         About
                     </h1>
                 </div>
