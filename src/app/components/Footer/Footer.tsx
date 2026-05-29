@@ -1,5 +1,6 @@
 import Typography from "@/app/Typography/Typography"
 import Button from "@/app/Button/Button"
+import Link from "next/link";
 import Image from "next/image"
 export default function Footer() {
   const arr = [
@@ -74,14 +75,14 @@ export default function Footer() {
 
     <div className="flex flex-row">
       <ul className="flex flex-col sm:flex-row items-center gap-5 cursor-pointer">
-
+ <Link href="/About">
         <Typography
           variant="paragraph"
           className="text-[18px] text-[#9A9DA2]"
         >
           About
         </Typography>
-
+</Link>
         <Typography
           variant="paragraph"
           className="text-[18px] text-[#9A9DA2]"

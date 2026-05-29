@@ -19,7 +19,7 @@ export default function Faqs() {
     }
     return (
         <>     
-        <section className="bg-[#ffffff]">
+        <section className="bg-[#ffffff] px-4 lg:px-0 py-10">
                 <div className="container mx-auto">
                     <div className="text-center mb-16">
                         <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-bold text-[#495567]">
@@ -29,7 +29,7 @@ export default function Faqs() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-10">
                         <div>
                             <Typography
-                                className="text-[36px] text-[#525C68]"
+                                className="text-[26px] lg:text-[36px] text-[#525C68]"
                                 variant="heading">
                                 How it works
                             </Typography>
@@ -40,11 +40,12 @@ export default function Faqs() {
                                     <div
                                         key={index}
                                         className="bg-[#F2F5FA] p-5 rounded-xl cursor-pointer"
+                                        onClick={() => handleClick(index)}
                                     >
-                                        <div onClick={() => handleClick(index)} className="flex justify-between items-center">
+                                        <div  className="flex justify-between items-center">
                                             <Typography
                                                 variant="heading"
-                                                className="text-[24px] text-[#525C68]"
+                                                 className="text-[18px] lg-text[24px] text-[#525C68]"
                                             >
                                                 {data.questionFirst}
                                             </Typography>
@@ -84,7 +85,7 @@ export default function Faqs() {
                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-20">
                         <div>
                             <Typography
-                                className="text-[36px] text-[#525C68]"
+                                className="text-[26px] lg:text-[36px] text-[#525C68]"
                                 variant="heading">
                               Safe driving
                             </Typography>
@@ -95,11 +96,12 @@ export default function Faqs() {
                                     <div
                                         key={index}
                                         className="bg-[#F2F5FA] p-5 rounded-xl cursor-pointer"
+                                        onClick={() => handleClickSec(index)}
                                     >
                                         <div onClick={() => handleClickSec(index)} className="flex justify-between items-center">
                                             <Typography
                                                 variant="heading"
-                                                className="text-[24px] text-[#525C68]"
+                                                className="text-[18px] lg-text[24px] text-[#525C68]"
                                             >
                                                 {data.questionSecond}
                                             </Typography>

@@ -95,14 +95,14 @@ export default function Navbar() {
 >
   <div className="bg-white shadow-md py-5 px-4">
     <ul className="flex flex-col gap-5 cursor-pointer">
-
+   <Link href="/About">
       <Typography
         variant="paragraph"
         className="text-[18px] text-[#9A9DA2] hover:text-purple-300 transition-colors duration-300"
       >
         About
       </Typography>
-
+</Link>
       <Typography
         variant="paragraph"
         className="text-[18px] text-[#9A9DA2] hover:text-purple-300 transition-colors duration-300"
